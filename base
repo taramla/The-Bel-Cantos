@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> THE TITLE </title>
+  <title> The CS Reviewer </title>
 </head>
 <body>
-  <h1> body1 </h1>
-  <p> paragraph </p>
+  <h1> Welcome to CS Reviewer </h1>
+  <p> Search for any class found in the Computer Science Department here </p>
 </body>
 </html>
