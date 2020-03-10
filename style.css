@@ -4,6 +4,22 @@ body{
   background: #922247;
 
 }
+.header h1{
+  text-align: center;
+  color: white;
+  font-family: "Lucida Console", Georgia, Times;
+}
+.header p{
+  text-align: center;
+  color: white;
+}
+.header img{
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 0;
+}
+
 .search-box{
   position: absolute;
   top: 50%;
@@ -12,24 +28,30 @@ body{
   background: #ffffff;
   height: 40px;
   border-radius: 40px;
-
+  padding: 10px;
 }
 
-.search-box: hover > .search-txt{
+.search-box:hover > .search-txt{
   width: 240px;
   padding: 0 6px;
 }
 
+.search-box:hover > .search-btn{
+  background: white;
+
+}
+
 .search-btn{
-  color: #922247;
+  color: #FEBD18;
   float: right;
   width: 40px;
   height: 40px;
-  border-radius: 50%
+  border-radius: 50%;
   background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
 }
 
 .search-txt{
@@ -37,8 +59,8 @@ body{
   background: none;
   outline: none;
   float: left;
-  paddin: 0;
-  color: white;
+  padding: 0;
+  color: black;
   font-size: 20px;
   transition: 0.4s;
   line-height: 40px;
