@@ -1,25 +1,55 @@
 body{
-  margin: 0;
-  padding: 0;
-  background: #922247;
-
+margin: 10px;
+padding: 0;
+background: #922247;
+font-family: quatro;
 }
+
 .header h1{
-  text-align: right;
+  margin-left: 30px;
+  margin-top: 100px;
   color: white;
-  font-family: "Lucida Console", Georgia, Times;
-  margin-right: 200px;
-  margin-top: 25px;
+  text-align: left;
+  font-size: 40px
+  font-weight: 700;
+  text-decoration: underline;
 }
 .header p{
-  text-align: right;
+  margin-left: 30px;
   color: white;
-  margin-right: 200px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.grid{
+  display: grid;
+  height: 1000px;
+  width: auto;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 1fr;
+  margin-top: 100px;
+}
+
+.box{
+  background-color: white;
+  color: black;
+  border: 1px black solid;
 
 }
-.backimage img{
-  width: 1900px;
-  margin-top: -100px
+
+.box h2{
+  text-align: center;
+  color: Black;
+  font-size: 25px;
+  border: 2px #FEBD18 solid;
+  border-radius: 10px;
+  padding: 10px;
+
+
+}
+.box p{
+  font-size: 20px;
 }
 
 .search-box{
