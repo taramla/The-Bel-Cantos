@@ -9,9 +9,11 @@
 </head>
 <body>
   <div class= "header">
-  <h1> COMP 324: Client-Side Web Development </h1>
-  <p> Tells us about your experinece with this course! </p>
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h1> COMP 324: Client-Side Web Development </h1>
+    <p> Tells us about your experience with this course! </p>
   </div>
+
   <div class="grid">
     <div class="box a">
       <h2> The current class description:</h2>
@@ -24,8 +26,36 @@ Students will acquire an awareness of different client-side design and developme
 
 </p>
     </div>
-    <div class="box b">
-      <h2>Reviews of course</h2>
+
+
+    <div class="review">
+      <h2>Review This Course!</h2>
+      <form>
+        <p>
+          <label>Major: </label>
+          <input type="text" name="major">
+        </p>
+        <p>
+          <label>Course Completed in: </label>
+          <input type="text" name="courseTaken">
+        </p>
+        <p>
+          <label>Professor Taken: </label>
+          <input type="text" name="prof">
+        </p>
+        <p>
+          <label>Grade Received</label>
+          <input type="text" name="grade">
+        </p>
+        <p class= "full">
+          <label>Feedback</label>
+          <textarea name="feedback" rows="7"></textarea>
+        </p>
+        <p class="full">
+          <button>Submit</button>
+        </p>
+
+      </form>
     </div>
     <div class="box c">
       <h2> Course Ratings</h2>

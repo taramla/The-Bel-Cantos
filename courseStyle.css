@@ -6,6 +6,7 @@ font-family: quatro;
 }
 
 .header h1{
+  position: relative;
   margin-left: 30px;
   margin-top: 100px;
   color: white;
@@ -15,6 +16,7 @@ font-family: quatro;
   text-decoration: underline;
 }
 .header p{
+  position: relative;
   margin-left: 30px;
   color: white;
   text-align: left;
@@ -22,6 +24,13 @@ font-family: quatro;
   font-weight: 400;
 }
 
+.header img{
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 125px;
+  padding-right: 50px;
+}
 .grid{
   display: grid;
   height: 1000px;
@@ -51,51 +60,28 @@ font-family: quatro;
 .box p{
   font-size: 20px;
 }
-
-.search-box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  height: 40px;
-  border-radius: 40px;
-  padding: 10px;
-}
-
-.search-box:hover > .search-txt{
-  width: 240px;
-  padding: 0 6px;
-}
-
-.search-box:hover > .search-btn{
-  background: white;
-
-}
-
-.search-btn{
-  color: #FEBD18;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
-
-.search-txt{
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
+.review h2{
+  text-align: center;
   color: black;
-  font-size: 20px;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0;
+  font-size: 25px;
+  border: 2px #FEBD18 solid;
+  border-radius: 10px;
+  padding: 10px;
 
+}
+.review{
+  display: grid;
+
+}
+.review label{
+  display: block;
+}
+.review p{
+  margin: 2;
+}
+
+.review button, .review input, .review textarea{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #FEBD18;
 }
