@@ -1,0 +1,21 @@
+body{
+margin: 10px;
+padding: 0;
+background: #922247;
+font-family: quatro;
+}
+.header h1{
+  color: white;
+  text-align: left;
+  font-size: 40px
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.header img{
+  float: right;
+  width: 100px;
+  height: 125px;
+  padding-right: 50px;
+  margin-top: -10px;
+}

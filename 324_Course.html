@@ -11,9 +11,12 @@
 
 <body>
   <div class= "header">
-  <h1> COMP 324: Client-Side Web Development </h1>
-  <p> Tells us about your experinece with this course! </p>
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h2>CS Reviewer</h2> 
+    <h1> COMP 324: Client-Side Web Development </h1>
+    <p> Tells us about your experience with this course! </p>
   </div>
+
   <div class="grid">
     <div class="box a">
     </div>
@@ -27,13 +30,35 @@
           We shall also consider client-side usage of tools and technologies such as Node.js, Express, and Mongoose. These technologies will be considered primarily from the client-side perspective with complementary introductions to data stores such as Redis, MongoDB, and Firebase.
       </p>
     </div>
-    <div class="box c"><h2> Course Ratings</h2></div>
-    <div class="box d">
-    </div>
-    <div class="box e">
-      <h2>Reviews of course</h2>
-    </div>
-    <div class="box f">
+
+    <div class="box c">
+      <h2>Review This Course!</h2>
+      <form>
+        <p>
+          <label>Major: </label>
+          <input type="text" name="major">
+        </p>
+        <p>
+          <label>Course Completed in: </label>
+          <input type="text" name="courseTaken">
+        </p>
+        <p>
+          <label>Professor Taken: </label>
+          <input type="text" name="prof">
+        </p>
+        <p>
+          <label>Grade Received</label>
+          <input type="text" name="grade">
+        </p>
+        <p class= "full">
+          <label>Feedback</label>
+          <textarea name="feedback" rows="7"></textarea>
+        </p>
+        <p class="full">
+          <button>Submit</button>
+        </p>
+
+      </form>
     </div>
     </div>
 

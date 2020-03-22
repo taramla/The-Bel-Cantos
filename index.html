@@ -4,6 +4,7 @@
   <meta charset = "utf-8">
   <link href="style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6e0d0103e3.js" crossorigin="anonymous"></script>
+  <script src ="index.js"> </script>
   <title> The CS Reviewer </title
 
 </head>
@@ -18,15 +19,27 @@
    <p> You can search for any class found in the Computer Science Department here </p>
 
    <div class="backimage">
-      <a href="index.html"><img src="324_CompWoman.png" alt="comp woman"/></a>
+      <a href="#"><img src="324_CompWoman.png" alt="comp woman"/></a>
    </div>
  </div>
 
   <div class="search-box">
-      <input class= "search-txt" type="text" name = "" placeholder = "Search for courses here">
+      <input class= "search-txt" type="text" onkeyup="myFunction()" placeholder = "Search for courses here" id="search"/>
       <a class="search-btn" href="#">
       <i class="fas fa-search"></i>
       </a>
+      <!-- currently dropdown-content is "on top" of search box, hindering us from
+    using search box; i think it's a problem with padding or layers -->
+    <div class="dropdown-content">
+      <a href="#"> COMP 170 </a>
+      <a href="#"> COMP 264 </a>
+      <a href="#"> COMP 271 </a>
+      <a href="#"> COMP 313 </a>
+      <a href="#"> COMP 320 </a>
+      <a href="324_Course.html"> COMP 324 </a>
+      <a href="#"> COMP 340 </a>
+
+    </div>
   </div>
 </body>
 </html>
