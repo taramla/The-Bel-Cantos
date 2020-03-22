@@ -27,75 +27,27 @@ font-family: quatro;
   height: 1000px;
   width: auto;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 1fr;
-  margin-top: 100px;
+  grid-template-rows: 40% 60%;
+
 }
 
 .box{
-  background-color: white;
-  color: black;
-  border: 1px black solid;
-
+  padding: 10px;
 }
 
 .box h2{
   text-align: center;
-  color: Black;
+  color: black;
   font-size: 25px;
   border: 2px #FEBD18 solid;
   border-radius: 10px;
   padding: 10px;
+  background-color: #FEBD18;
 
 
 }
 .box p{
   font-size: 20px;
-}
-
-.search-box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  height: 40px;
-  border-radius: 40px;
   padding: 10px;
-}
-
-.search-box:hover > .search-txt{
-  width: 240px;
-  padding: 0 6px;
-}
-
-.search-box:hover > .search-btn{
-  background: white;
-
-}
-
-.search-btn{
-  color: #FEBD18;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
-
-.search-txt{
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: black;
-  font-size: 20px;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0;
-
+  color: white;
 }
