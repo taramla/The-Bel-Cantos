@@ -1,5 +1,5 @@
-
 function myFunction() {
+
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
@@ -13,7 +13,7 @@ function myFunction() {
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
-      li[i].style.display = "No course found";
+      li[i].style.display = "none";
     }
   }
 }
