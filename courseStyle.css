@@ -8,10 +8,10 @@ font-family: quatro;
 .header h1{
   position: relative;
   margin-left: 30px;
-  margin-top: 80px;
+  margin-top: 50px;
   color: white;
   text-align: left;
-  font-size: 40px
+  font-size: 50px;
   font-weight: 700;
 }
 .header h2{
@@ -39,6 +39,8 @@ font-family: quatro;
   padding-right: 50px;
   margin-top: -10px;
 }
+
+
 .grid{
   display: grid;
   height: 1000px;
@@ -48,11 +50,13 @@ font-family: quatro;
 
 }
 
+/* nested grid for review */
 .box{
   display: grid;
   padding: 10px;
   padding-left: -20px;
-  padding-right: 30px; 
+  padding-right: 30px;
+
 }
 
 .box h2{
@@ -67,7 +71,7 @@ font-family: quatro;
 
 }
 .box p{
-  font-size: 20px;
+  font-size: 17px;
   color: white;
 }
 
@@ -79,11 +83,15 @@ font-family: quatro;
 }
 
 .box button{
-  background-color:#FEBD18 ;
+  background-color:#FEBD18;
+  transition-duration: 0.4s;
 }
 .box button, .box input, .box textarea{
   width: 100%;
   padding: 1em;
   border: 1px solid #FEBD18;
   border-radius: 10px;
+}
+.box button:hover  {
+  background-color: #ffe9b3;
 }

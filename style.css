@@ -11,6 +11,19 @@ body{
   margin-top: -35px;
   margin-right: 20px;
 }
+.nav-links{
+  flex: 1;
+  text-align:justify;
+}
+.nav-links ul li{
+  list-style:none;
+  display:inline-block;
+  margin: 0 25px;
+}
+.nav-links ul li a{
+  color:  #fff;
+  text-decoration:underline;
+}
 .header h1{
   text-align: right;
   color: white;
@@ -28,13 +41,13 @@ body{
 }
 
 .backimage img{
-  width: 1900px;
+  width: 1700px;
   margin-top: -150px;
 }
 
 .search-box{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #ffffff;
@@ -106,7 +119,7 @@ body{
 }
 
 .dropdown-content a:hover {
-  background-color: #ffe9b3
+  background-color: #ffe9b3;
 }
 
 .search-box:hover .dropdown-content {
