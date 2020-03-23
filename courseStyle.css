@@ -52,6 +52,7 @@ font-family: quatro;
   display: grid;
   padding: 10px;
   padding-left: -20px;
+  padding-right: 30px; 
 }
 
 .box h2{
@@ -77,8 +78,12 @@ font-family: quatro;
   margin: 2;
 }
 
+.box button{
+  background-color:#FEBD18 ;
+}
 .box button, .box input, .box textarea{
   width: 100%;
   padding: 1em;
   border: 1px solid #FEBD18;
+  border-radius: 10px;
 }

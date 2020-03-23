@@ -81,6 +81,11 @@ body{
 
 }
 
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .dropdown-content{
   border: 1px #ddd;
   margin-top: 50px;
