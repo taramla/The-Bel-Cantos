@@ -28,7 +28,7 @@ body{
 }
 
 .backimage img{
-  width: 1900px;
+  width: 1700px;
   margin-top: -150px;
 }
 
@@ -106,7 +106,7 @@ body{
 }
 
 .dropdown-content a:hover {
-  background-color: #ffe9b3
+  background-color: #ffe9b3;
 }
 
 .search-box:hover .dropdown-content {
