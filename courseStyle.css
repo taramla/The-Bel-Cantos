@@ -3,6 +3,7 @@ margin: 10px;
 padding: 0;
 background: #922247;
 font-family: quatro;
+
 }
 
 .header h1{
@@ -40,6 +41,7 @@ font-family: quatro;
   margin-top: -10px;
 }
 
+/* OUTER GRID */
 
 .grid{
   display: grid;
@@ -50,8 +52,31 @@ font-family: quatro;
 
 }
 
-/* nested grid for review */
-.box{
+.section h2{
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  border: 2px #FEBD18 solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #FEBD18;
+  margin: 10px;
+}
+.section p{
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+}
+.section label{
+  display: block;
+}
+.section p{
+  margin: 2;
+}
+
+
+/* nested grid for review form*/
+.review{
   display: grid;
   padding: 10px;
   padding-left: -20px;
@@ -67,7 +92,6 @@ font-family: quatro;
   border-radius: 10px;
   padding: 10px;
   background-color: #FEBD18;
-
 
 }
 .box p{
@@ -86,6 +110,16 @@ font-family: quatro;
   background-color:#FEBD18;
   transition-duration: 0.4s;
 }
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background:#ffe9b3;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+}
+
 .box button, .box input, .box textarea{
   width: 100%;
   padding: 1em;
