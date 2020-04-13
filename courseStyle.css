@@ -76,12 +76,12 @@ font-family: quatro;
 
 
 /* nested grid for review form*/
-.review{
+.box{
   display: grid;
   padding: 10px;
   padding-left: -20px;
   padding-right: 30px;
-
+  
 }
 
 .box h2{
@@ -118,6 +118,7 @@ font-family: quatro;
   color: white;
   margin-bottom: 10px;
   display: none;
+  border-radius: 10px;
 }
 
 .box button, .box input, .box textarea{

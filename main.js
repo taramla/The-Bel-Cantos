@@ -15,12 +15,15 @@
   //firebase.analytics();
 
 
-let formReview = firebase.database().ref('reviews');
+
+const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
+
 document.getElementById('reviewForm').addEventListener('submit', formSubmit);
 
+//write data
 function formSubmit(e){
   e.preventDefault();
-
+//gets each variable from DOM
   let major= document.querySelector('#major').value;
   let course= document.querySelector('#course').value;
   let courseTaken= document.querySelector('#courseTaken').value;
@@ -30,10 +33,10 @@ function formSubmit(e){
 
   sendMessage(major, course, courseTaken, prof, grade, review);
 
-// shows alert
+// shows alert after submission
   document.querySelector('.alert').style.display = 'block';
 
- //after submission alert pops up, hides alert after three secs
+ //after submission alert pops up, hides alert after 7 secs
   setTimeout(function(){
     document.querySelector('.alert').style.display = 'none';
   },7000);
@@ -43,7 +46,7 @@ function formSubmit(e){
 
 function sendMessage(major, course, courseTaken, prof, grade, review){
   let newFormReview = formReview.push();
-  newFormReview.set({
+    newFormReview.set({
     major: major,
     course: course,
     courseTaken: courseTaken,
@@ -53,3 +56,33 @@ function sendMessage(major, course, courseTaken, prof, grade, review){
   });
 
 }
+
+// reads data
+formReview.on('child_added', snap => {
+  var theMajor = snap.child("major").val();
+  var theCourse = snap.child("course").val();
+  var theCourseTaken = snap.child("courseTaken").val();
+  var theProf = snap.child("prof").val();
+  var theGrade = snap.child("grade").val();
+  var theReview = snap.child("review").val();
+
+  var table = document.getElementById('table');
+  tableChild = document.createElement('tr');
+  tableChild.innerHTML = "<td>" + theMajor + "</td><td>" + theCourse + "</td><td>" + theCourseTaken + "</td><td>" + theProf + "</td><td>" + theGrade + "</td><td>" + theReview + "</td>";
+  table.appendChild(tableChild);
+});
+
+
+formReview.on('child_changed', snap => {
+  var theMajor = snap.child("major").val();
+  var theCourse = snap.child("course").val();
+  var theCourseTaken = snap.child("courseTaken").val();
+  var theProf = snap.child("prof").val();
+  var theGrade = snap.child("grade").val();
+  var theReview = snap.child("review").val();
+
+  var table = document.getElementById('table');
+  tableChild = document.createElement('tr');
+  tableChild.innerHTML = "<td>" + theMajor + "</td><td>" + theCourse + "</td><td>" + theCourseTaken + "</td><td>" + theProf + "</td><td>" + theGrade + "</td><td>" + theReview + "</td>";
+  table.appendChild(tableChild);
+});
