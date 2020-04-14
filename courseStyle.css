@@ -41,6 +41,23 @@ font-family: quatro;
   margin-top: -10px;
 }
 
+/* table with read data  */
+.section th{
+  font-family: quatro;
+  border: 2px #FEBD18 solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.section td {
+  color: white;
+  tect-align: center;
+}
+.section table {
+  overflow-x: auto;
+}
+
+
 /* OUTER GRID */
 
 .grid{
@@ -70,18 +87,15 @@ font-family: quatro;
 .section label{
   display: block;
 }
-.section p{
-  margin: 2;
-}
 
 
 /* nested grid for review form*/
 .box{
   display: grid;
-  padding: 10px;
-  padding-left: -20px;
+
+  padding-left: 20px;
   padding-right: 30px;
-  
+
 }
 
 .box h2{
@@ -90,8 +104,9 @@ font-family: quatro;
   font-size: 25px;
   border: 2px #FEBD18 solid;
   border-radius: 10px;
-  padding: 10px;
+  padding: 2px;
   background-color: #FEBD18;
+  margin: 10px;
 
 }
 .box p{
@@ -102,9 +117,9 @@ font-family: quatro;
 .box label{
   display: block;
 }
-.box p{
+/* .box p{
   margin: 2;
-}
+} */
 
 .box button{
   background-color:#FEBD18;
@@ -114,8 +129,8 @@ font-family: quatro;
 .alert {
   text-align: center;
   padding: 10px;
-  background:#ffe9b3;
-  color: white;
+  background:#FEBD18;
+  color: black;
   margin-bottom: 10px;
   display: none;
   border-radius: 10px;
