@@ -10,15 +10,40 @@
     appId: "1:1055573790361:web:1f97d3cbe622b8a21df208",
     measurementId: "G-8BTF52D0W6"
   };
-  // Initialize Firebase
+  // Initialize  Firebase
   firebase.initializeApp(firebaseConfig);
   //firebase.analytics();
 
+ var db = firebase.database().ref();
+ var formReview;
+ var title = document.title;
+
+function check(courseNum){
+  if (courseNum == title){
+    if (title == 'COMP 324'){
+    formReview = db.child('324_reviews');}
+    if (courseNum == 'COMP 347'){
+    formReview = db.child('347_reviews');}
+    if (courseNum == 'COMP 348'){
+    formReview = db.child('348_reviews');}
+  }
+
+  else {
+    console.log('wrong course!');
+  }
+
+}
+
+check('COMP 324');
+check('COMP 347');
+check('COMP 348');
 
 
-const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
+//const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
 
 document.getElementById('reviewForm').addEventListener('submit', formSubmit);
+//this would change second parameter to review
+
 
 //write data
 function formSubmit(e){
@@ -32,7 +57,7 @@ function formSubmit(e){
   let review= document.querySelector('#review').value;
 
   sendMessage(major, course, courseTaken, prof, grade, review);
-
+  // readData();
 // shows alert after submission
   document.querySelector('.alert').style.display = 'block';
 
@@ -57,6 +82,7 @@ function sendMessage(major, course, courseTaken, prof, grade, review){
 
 }
 
+//function readData(){
 // reads data
 formReview.on('child_added', snap => {
   var theMajor = snap.child("major").val();
@@ -86,3 +112,4 @@ formReview.on('child_changed', snap => {
   tableChild.innerHTML = "<td>" + theMajor + "</td><td>" + theCourse + "</td><td>" + theCourseTaken + "</td><td>" + theProf + "</td><td>" + theGrade + "</td><td>" + theReview + "</td>";
   table.appendChild(tableChild);
 });
+//}
