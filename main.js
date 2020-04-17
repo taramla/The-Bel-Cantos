@@ -42,6 +42,7 @@ function check(courseNum){
 
 check('COMP 324');
 check('COMP 328');
+check('COMP 329');
 check('COMP 347');
 check('COMP 348');
 check('COMP 349');
