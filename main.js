@@ -22,6 +22,8 @@ function check(courseNum){
   if (courseNum == title){
     if (title == 'COMP 324'){
     formReview = db.child('324_reviews');}
+    if (courseNum == 'COMP 328'){
+    formReview = db.child('328_reviews');}
     if (courseNum == 'COMP 347'){
     formReview = db.child('347_reviews');}
     if (courseNum == 'COMP 348'){
@@ -37,6 +39,7 @@ function check(courseNum){
 }
 
 check('COMP 324');
+check('COMP 328');
 check('COMP 347');
 check('COMP 348');
 check('COMP 349');

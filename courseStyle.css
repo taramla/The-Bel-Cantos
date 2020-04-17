@@ -109,6 +109,17 @@ font-family: quatro;
   margin: 10px;
 
 }
+.box h3{
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  border: 2px #FEBD18 solid;
+  border-radius: 10px;
+  padding: 2px;
+  background-color: #FEBD18;
+  margin: 10px;
+}
+
 .box p{
   font-size: 17px;
   color: white;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <link href="courseStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/wth2ulr.css">
+  <title> COMP 271 </title>
+</head>
+
+<body>
+  <div class= "header">
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h2>CS Reviewer</h2>
+    <h1> COMP 271: Data Structures: Algorithms and  Applications </h1>
+    <p> Tells us about your experience with this course! </p>
+  </div>
+
+  <div class="grid">
+    <div class="section a">
+      <h2>Prerequisites
+        <form>
+          <input type="checkbox" value="COMP 170">COMP 170: Intro to Object Oriented Programming OR <br>
+          <input type="checkbox" value="COMP 215">COMP 215: Object Oriented Programming with Mathematics<br>
+        </form>
+        </h2>
+      <h3> Co-requisites
+        <form>
+          <input type="checkbox" value="Comp 163">Comp 163: Discrete Structures OR<br>
+          <input type="checkbox" value="Math 201">Math 210: Intro to Discrete Mathematics and Number Theory<br>
+        <form>
+      <h3>
+    </div>
+    <div class="section b">
+      <h2>Class Description</h2>
+      <p> This course introduces key data structures such as lists, sets, and maps, as well as their implementations. Performance and analysis of algorithms are covered along with applications in sorting and searching.
+        Outcome of the course is that students will learn to design new data structures as well as learn to use existing data structures in applications.
+    </div>
+      <!-- this is the review form -->
+      <div class="box">
+        <h2>Review This Course!</h2>
+
+        <form id = "reviewForm">
+          <p>
+            <label>Major: </label>
+            <input type="text" name="major" id= "major" required>
+          </p>
+          <p>
+            <label>Course: </label>
+            <input type="text" name="course" id= "course" required>
+          </p>
+          <p>
+            <label>Course Completed in: </label>
+            <input type="text" name="courseTaken" id= "courseTaken" required>
+          </p>
+          <p>
+            <label>Professor Taken: </label>
+            <input type="text" name="prof" id= "prof">
+          </p>
+          <p>
+            <label>Grade Received:</label>
+            <input type="text" name="grade" id= "grade">
+          </p>
+          <p class= "full">
+            <label>Give Feedback:</label>
+            <textarea name="feedback" rows="7" id="review"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" sendMessage()>Submit</button>
+          </p>
+        </form>
+        <div class="alert"> Thank you for your review</div>
+      </div>
+    <div class="section d"></div>
+  <div class= "section e">
+    <h2> See What Others are Saying </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Major</th>
+          <th>Course</th>
+          <th>Completed In</th>
+          <th>Prof</th>
+          <th>Grade</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+    <tbody id=table></tbody>
+    </table>
+  </div>
+  <div class="section f"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  -->
+<script src= "main.js"> </script>
+</body>
+</html>
