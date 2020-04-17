@@ -26,6 +26,8 @@ function check(courseNum){
     formReview = db.child('347_reviews');}
     if (courseNum == 'COMP 348'){
     formReview = db.child('348_reviews');}
+    if (courseNum == 'COMP 349'){
+    formReview = db.child('349_reviews');}
   }
 
   else {
@@ -37,7 +39,7 @@ function check(courseNum){
 check('COMP 324');
 check('COMP 347');
 check('COMP 348');
-
+check('COMP 349');
 
 //const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
 
