@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <link href="courseStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/wth2ulr.css">
+  <title> COMP 390 </title>
+</head>
+
+<body>
+  <div class= "header">
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h2>CS Reviewer</h2>
+    <h1> COMP 390: Broadening Participation in STEM (Computing, Math & Science) </h1>
+    <p> Tell us about your experience with this course! </p>
+  </div>
+
+  <div class="grid">
+    <div class="section a">
+      <h2>Prerequisites:
+        <form>
+          <input type="checkbox" value="NONE">None <br>
+        </form>
+        </h2>
+    </div>
+    <div class="section b">
+      <h2>Class Description</h2>
+      <p> Students will learn about underrepresentation of various population groups in STEM fields (science, technology, engineering, mathematics), as well as some of the reasons and negative effects of this situation. They will learn about techniques and educational materials for ameliorating this situation and will engage in relevant service learning activities.
+      </p>
+    </div>
+      <!-- this is the review form -->
+      <div class="box">
+        <h2>Review This Course!</h2>
+
+        <form id = "reviewForm">
+          <p>
+            <label>Major: </label>
+            <input type="text" name="major" id= "major" required>
+          </p>
+          <p>
+            <label>Course: </label>
+            <input type="text" name="course" id= "course" required>
+          </p>
+          <p>
+            <label>Course Completed in: </label>
+            <input type="text" name="courseTaken" id= "courseTaken" required>
+          </p>
+          <p>
+            <label>Professor Taken: </label>
+            <input type="text" name="prof" id= "prof">
+          </p>
+          <p>
+            <label>Grade Received:</label>
+            <input type="text" name="grade" id= "grade">
+          </p>
+          <p class= "full">
+            <label>Give Feedback:</label>
+            <textarea name="feedback" rows="7" id="review"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" sendMessage()>Submit</button>
+          </p>
+        </form>
+        <div class="alert"> Thank you for your review</div>
+      </div>
+    <div class="section d"></div>
+  <div class= "section e">
+    <h2> See What Others are Saying </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Major</th>
+          <th>Course</th>
+          <th>Completed In</th>
+          <th>Prof</th>
+          <th>Grade</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+    <tbody id=table></tbody>
+    </table>
+  </div>
+  <div class="section f"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  -->
+<script src= "main.js"> </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <link href="courseStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/wth2ulr.css">
+  <title> COMP 391 </title>
+</head>
+
+<body>
+  <div class= "header">
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h2>CS Reviewer</h2>
+    <h1> COMP 391: Internship in Computer Science </h1>
+    <p> Tell us about your experience with this course! </p>
+  </div>
+
+  <div class="grid">
+    <div class="section a">
+      <h2>Prerequisites:
+        <form>
+          <input type="checkbox" value="APPROVAL">Undergraduate Internship Coordintor approval (usually limited to 6 total credits) <br>
+        </form>
+        </h2>
+    </div>
+    <div class="section b">
+      <h2>Class Description</h2>
+      <p> An opportunity to obtain experience in software development, design, or related activities in computer science in a professional setting.
+
+Selection for Internships in Computer Science:
+
+Students interested in internship must first find an employer/supervisor willing to provide them with a job.  Internships are most advantageous to students if they already have considerable experience in upper level Computer Science courses.  Skills from upper level courses are also going to help students be hired.
+The student must make a formal request to the Undergraduate Internship Coordinator, supplying a job Description. The Undergraduate Internship Coordinator is looking for positions where the student will use and extend knowledge from upper level courses.
+The Undergraduate Internship Coordinator reviews the student’s performance in general and in relevant Comp classes, and either approves the request or suggests what further steps the student should make before securing an internship.
+By the start of the internship the student must deliver the Internship Memorandum of Understanding (see below) signed by both the supervisor, student, and Undergraduate Internship Coordinator, outlining the expectations of all parties.
+      </p>
+    </div>
+      <!-- this is the review form -->
+      <div class="box">
+        <h2>Review This Course!</h2>
+
+        <form id = "reviewForm">
+          <p>
+            <label>Major: </label>
+            <input type="text" name="major" id= "major" required>
+          </p>
+          <p>
+            <label>Course: </label>
+            <input type="text" name="course" id= "course" required>
+          </p>
+          <p>
+            <label>Course Completed in: </label>
+            <input type="text" name="courseTaken" id= "courseTaken" required>
+          </p>
+          <p>
+            <label>Professor Taken: </label>
+            <input type="text" name="prof" id= "prof">
+          </p>
+          <p>
+            <label>Grade Received:</label>
+            <input type="text" name="grade" id= "grade">
+          </p>
+          <p class= "full">
+            <label>Give Feedback:</label>
+            <textarea name="feedback" rows="7" id="review"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" sendMessage()>Submit</button>
+          </p>
+        </form>
+        <div class="alert"> Thank you for your review</div>
+      </div>
+    <div class="section d"></div>
+  <div class= "section e">
+    <h2> See What Others are Saying </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Major</th>
+          <th>Course</th>
+          <th>Completed In</th>
+          <th>Prof</th>
+          <th>Grade</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+    <tbody id=table></tbody>
+    </table>
+  </div>
+  <div class="section f"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  -->
+<script src= "main.js"> </script>
+</body>
+</html>

@@ -90,6 +90,38 @@ function check(courseNum){
     formReview = db.child('373_reviews');}
     if (courseNum == 'COMP 376'){
     formReview = db.child('376_reviews');}
+    if (courseNum == 'COMP 377'){
+    formReview = db.child('377_reviews');}
+    if (courseNum == 'COMP 378'){
+    formReview = db.child('378_reviews');}
+    if (courseNum == 'COMP 379'){
+    formReview = db.child('379_reviews');}
+    if (courseNum == 'COMP 380'){
+    formReview = db.child('380_reviews');}
+    if (courseNum == 'COMP 381'){
+    formReview = db.child('381_reviews');}
+    if (courseNum == 'COMP 382'){
+    formReview = db.child('382_reviews');}
+    if (courseNum == 'COMP 383'){
+    formReview = db.child('383_reviews');}
+    if (courseNum == 'COMP 386'){
+    formReview = db.child('386_reviews');}
+    if (courseNum == 'COMP 388'){
+    formReview = db.child('388_reviews');}
+    if (courseNum == 'COMP 390'){
+    formReview = db.child('390_reviews');}
+    if (courseNum == 'COMP 391'){
+    formReview = db.child('391_reviews');}
+    if (courseNum == 'COMP 392'){
+    formReview = db.child('392_reviews');}
+    if (courseNum == 'COMP 395'){
+    formReview = db.child('395_reviews');}
+    if (courseNum == 'COMP 397'){
+    formReview = db.child('397_reviews');}
+    if (courseNum == 'COMP 398'){
+    formReview = db.child('398_reviews');}
+    if (courseNum == 'COMP 399'){
+    formReview = db.child('399_reviews');}
   }
 
   else {
@@ -133,6 +165,22 @@ check('COMP 370');
 check('COMP 371');
 check('COMP 373');
 check('COMP 376');
+check('COMP 377');
+check('COMP 378');
+check('COMP 379');
+check('COMP 380');
+check('COMP 381');
+check('COMP 382');
+check('COMP 383');
+check('COMP 386');
+check('COMP 388');
+check('COMP 390');
+check('COMP 391');
+check('COMP 392');
+check('COMP 395');
+check('COMP 397');
+check('COMP 398');
+check('COMP 399');
 //const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
 
 document.getElementById('reviewForm').addEventListener('submit', formSubmit);
