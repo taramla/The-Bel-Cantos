@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <link href="courseStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/wth2ulr.css">
+  <title> COMP 339 </title>
+</head>
+
+<body>
+  <div class= "header">
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h2>CS Reviewer</h2>
+    <h1> COMP 339: Distributed Systems </h1>
+    <p> Tell us about your experience with this course! </p>
+  </div>
+
+  <div class="grid">
+    <div class="section a">
+      <h2>Prerequisites:
+        <form>
+          <input type="checkbox" value="COMP 313">COMP 313: Intermediate Object-Oriented Development <br>
+          <input type="checkbox" value="COMP 330">COMP 310: Introduction to Operating Systems <br>
+        </form>
+        </h2>
+    </div>
+    <div class="section b">
+      <h2>Class Description</h2>
+      <p> This course is designed as a modern discussion of distributed computing systems, which represent one of the most important areas in academic and business computing today. Topics covered include distributed computing, interactive services, collaborative computing, and peer-to-peer sharing.
+Various distributed frameworks and technologies will be explored, e.g. DNS, CORBA, Java RMI, SOAP (XML-based RPCs), and Globus.
+        </p>
+    </div>
+      <!-- this is the review form -->
+      <div class="box">
+        <h2>Review This Course!</h2>
+
+        <form id = "reviewForm">
+          <p>
+            <label>Major: </label>
+            <input type="text" name="major" id= "major" required>
+          </p>
+          <p>
+            <label>Course: </label>
+            <input type="text" name="course" id= "course" required>
+          </p>
+          <p>
+            <label>Course Completed in: </label>
+            <input type="text" name="courseTaken" id= "courseTaken" required>
+          </p>
+          <p>
+            <label>Professor Taken: </label>
+            <input type="text" name="prof" id= "prof">
+          </p>
+          <p>
+            <label>Grade Received:</label>
+            <input type="text" name="grade" id= "grade">
+          </p>
+          <p class= "full">
+            <label>Give Feedback:</label>
+            <textarea name="feedback" rows="7" id="review"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" sendMessage()>Submit</button>
+          </p>
+        </form>
+        <div class="alert"> Thank you for your review</div>
+      </div>
+    <div class="section d"></div>
+  <div class= "section e">
+    <h2> See What Others are Saying </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Major</th>
+          <th>Course</th>
+          <th>Completed In</th>
+          <th>Prof</th>
+          <th>Grade</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+    <tbody id=table></tbody>
+    </table>
+  </div>
+  <div class="section f"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  -->
+<script src= "main.js"> </script>
+</body>
+</html>
