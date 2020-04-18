@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <link href="courseStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/wth2ulr.css">
+  <title> COMP 363 </title>
+</head>
+
+<body>
+  <div class= "header">
+    <a href="index.html"><img src= "logo.png" alt="logo"/></a>
+    <h2>CS Reviewer</h2>
+    <h1>COMP 363: Design and Analysis of Computer Algorithms</h1>
+    <p> Tell us about your experience with this course! </p>
+  </div>
+
+  <div class="grid">
+    <div class="section a">
+      <h2>Prerequisites:
+        <form>
+          <input type="checkbox" value="COMP 163">COMP 163: Discrete Structures or MATH 201: Introduction to Discrete Mathematics and Number Theory<br>
+  <input type="checkbox" value="COMP 271">COMP 271: Data Structures I<br>
+  <input type="checkbox" value="MATH 131">MATH 131: Applied Calculus I or MATH 161: Calculus I<br>
+        </form>
+        </h2>
+    </div>
+    <div class="section b">
+      <h2>Class Description</h2>
+      <p> The central goal of this course is for students to gain basic skills in designing and implementing efficient and effective computer programs. The course begins by developing models and mathematical tools for measuring the efficiency of algorithms. Then students are introduced to a variety of useful data structures and to algorithms for a variety of fundamental problems. Finally, the course will provide an introduction to classification of computational problems into different complexity classes. The course will include a small amount of actual programming in addition to theoretical analysis.
+      </p>
+    </div>
+      <!-- this is the review form -->
+      <div class="box">
+        <h2>Review This Course!</h2>
+
+        <form id = "reviewForm">
+          <p>
+            <label>Major: </label>
+            <input type="text" name="major" id= "major" required>
+          </p>
+          <p>
+            <label>Course: </label>
+            <input type="text" name="course" id= "course" required>
+          </p>
+          <p>
+            <label>Course Completed in: </label>
+            <input type="text" name="courseTaken" id= "courseTaken" required>
+          </p>
+          <p>
+            <label>Professor Taken: </label>
+            <input type="text" name="prof" id= "prof">
+          </p>
+          <p>
+            <label>Grade Received:</label>
+            <input type="text" name="grade" id= "grade">
+          </p>
+          <p class= "full">
+            <label>Give Feedback:</label>
+            <textarea name="feedback" rows="7" id="review"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" sendMessage()>Submit</button>
+          </p>
+        </form>
+        <div class="alert"> Thank you for your review</div>
+      </div>
+    <div class="section d"></div>
+  <div class= "section e">
+    <h2> See What Others are Saying </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Major</th>
+          <th>Course</th>
+          <th>Completed In</th>
+          <th>Prof</th>
+          <th>Grade</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+    <tbody id=table></tbody>
+    </table>
+  </div>
+  <div class="section f"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  -->
+<script src= "main.js"> </script>
+</body>
+</html>

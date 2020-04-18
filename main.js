@@ -62,6 +62,34 @@ function check(courseNum){
     formReview = db.child('348_reviews');}
     if (courseNum == 'COMP 349'){
     formReview = db.child('349_reviews');}
+    if (courseNum == 'COMP 351'){
+    formReview = db.child('351_reviews');}
+    if (courseNum == 'COMP 352'){
+    formReview = db.child('352_reviews');}
+    if (courseNum == 'COMP 353'){
+    formReview = db.child('353_reviews');}
+    if (courseNum == 'COMP 356'){
+    formReview = db.child('356_reviews');}
+    if (courseNum == 'COMP 362'){
+    formReview = db.child('362_reviews');}
+    if (courseNum == 'COMP 363'){
+    formReview = db.child('363_reviews');}
+    if (courseNum == 'COMP 364'){
+    formReview = db.child('364_reviews');}
+    if (courseNum == 'COMP 366'){
+    formReview = db.child('366_reviews');}
+    if (courseNum == 'COMP 367'){
+    formReview = db.child('367_reviews');}
+    if (courseNum == 'COMP 369'){
+    formReview = db.child('369_reviews');}
+    if (courseNum == 'COMP 370'){
+    formReview = db.child('370_reviews');}
+    if (courseNum == 'COMP 371'){
+    formReview = db.child('371_reviews');}
+    if (courseNum == 'COMP 373'){
+    formReview = db.child('373_reviews');}
+    if (courseNum == 'COMP 376'){
+    formReview = db.child('376_reviews');}
   }
 
   else {
@@ -91,7 +119,20 @@ check('COMP 331');
 check('COMP 347');
 check('COMP 348');
 check('COMP 349');
-
+check('COMP 351');
+check('COMP 352');
+check('COMP 353');
+check('COMP 356');
+check('COMP 362');
+check('COMP 363');
+check('COMP 364');
+check('COMP 366');
+check('COMP 367');
+check('COMP 369');
+check('COMP 370');
+check('COMP 371');
+check('COMP 373');
+check('COMP 376');
 //const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
 
 document.getElementById('reviewForm').addEventListener('submit', formSubmit);

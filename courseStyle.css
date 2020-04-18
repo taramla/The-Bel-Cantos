@@ -41,6 +41,10 @@ font-family: quatro;
   margin-top: -10px;
 }
 
+.section form {
+  text-align: left;
+  font-size: 24px; 
+}
 /* table with read data  */
 .section th{
   font-family: quatro;
