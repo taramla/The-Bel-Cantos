@@ -7,15 +7,64 @@ font-family: quatro;
 .header h1{
   color: white;
   text-align: left;
-  font-size: 40px
+  font-size: 60px;
   font-weight: 700;
-  margin-left: 20px;
+  margin-left: -50px;
+  margin-top: 80px;
 }
 
 .header img{
-  float: right;
-  width: 100px;
-  height: 125px;
+  float: left;
+  width: 50px;
+  height: 145px;
   padding-right: 50px;
-  margin-top: -10px;
+  margin-top: -100px;
+}
+
+.info h2{
+  color: white;
+  text-align: left;
+  font-size: 40px
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.info p{
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  margin-left: 40px;
+}
+
+.topics h2{
+  color: white;
+  text-align: left;
+  font-size: 40px
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.topics p{
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  margin-left: 40px;
+}
+
+.purpose h2{
+  color: white;
+  text-align: left;
+  font-size: 40px
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.purpose p{
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  margin-left: 40px;
 }
