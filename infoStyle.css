@@ -68,3 +68,27 @@ font-family: quatro;
   color: white;
   margin-left: 40px;
 }
+
+.site h2{
+  color: white;
+  text-align: left;
+  font-size: 40px
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.site p{
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  margin-left: 40px;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: blue;
+}
