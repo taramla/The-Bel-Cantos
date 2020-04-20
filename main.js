@@ -19,6 +19,7 @@
  var title = document.title;
 
 function check(courseNum){
+if (courseNum == title){
   if (courseNum == 'COMP 271'){
   formReview = db.child('271_reviews');}
   if (courseNum == 'COMP 272'){
@@ -55,112 +56,108 @@ function check(courseNum){
   formReview = db.child('328_reviews');}
   if (courseNum == 'COMP 329'){
      formReview = db.child('329_reviews');}
-     if (courseNum == 'COMP 330'){
-     formReview = db.child('330_reviews');}
-     if (courseNum == 'COMP 331'){
-     formReview = db.child('331_reviews');}
-     if (courseNum == 'COMP 332'){
-     formReview = db.child('332_reviews');}
-     if (courseNum == 'COMP 333'){
-     formReview = db.child('333_reviews');}
-     if (courseNum == 'COMP 335'){
-     formReview = db.child('335_reviews');}
-     if (courseNum == 'COMP 336'){
-     formReview = db.child('336_reviews');}
-     if (courseNum == 'COMP 337'){
-     formReview = db.child('337_reviews');}
-     if (courseNum == 'COMP 338'){
-     formReview = db.child('338_reviews');}
-     if (courseNum == 'COMP 339'){
-     formReview = db.child('339_reviews');}
-     if (courseNum == 'COMP 340'){
-     formReview = db.child('340_reviews');}
-     if (courseNum == 'COMP 341'){
-     formReview = db.child('341_reviews');}
-     if (courseNum == 'COMP 342'){
-     formReview = db.child('342_reviews');}
-     if (courseNum == 'COMP 343'){
-     formReview = db.child('343_reviews');}
-     if (courseNum == 'COMP 345'){
-     formReview = db.child('345_reviews');}
-     if (courseNum == 'COMP 346'){
-     formReview = db.child('346_reviews');}
-     if (courseNum == 'COMP 347'){
-     formReview = db.child('347_reviews');}
-     if (courseNum == 'COMP 348'){
-     formReview = db.child('348_reviews');}
-     if (courseNum == 'COMP 349'){
-     formReview = db.child('349_reviews');}
-     if (courseNum == 'COMP 351'){
-     formReview = db.child('351_reviews');}
-     if (courseNum == 'COMP 352'){
-     formReview = db.child('352_reviews');}
-     if (courseNum == 'COMP 353'){
-     formReview = db.child('353_reviews');}
-     if (courseNum == 'COMP 356'){
-     formReview = db.child('356_reviews');}
-     if (courseNum == 'COMP 362'){
-     formReview = db.child('362_reviews');}
-     if (courseNum == 'COMP 363'){
-     formReview = db.child('363_reviews');}
-     if (courseNum == 'COMP 364'){
-     formReview = db.child('364_reviews');}
-     if (courseNum == 'COMP 366'){
-     formReview = db.child('366_reviews');}
-     if (courseNum == 'COMP 367'){
-     formReview = db.child('367_reviews');}
-     if (courseNum == 'COMP 369'){
-     formReview = db.child('369_reviews');}
-     if (courseNum == 'COMP 370'){
-     formReview = db.child('370_reviews');}
-     if (courseNum == 'COMP 371'){
-     formReview = db.child('371_reviews');}
-     if (courseNum == 'COMP 373'){
-     formReview = db.child('373_reviews');}
-     if (courseNum == 'COMP 376'){
-     formReview = db.child('376_reviews');}
-     if (courseNum == 'COMP 377'){
-     formReview = db.child('377_reviews');}
-     if (courseNum == 'COMP 378'){
-     formReview = db.child('378_reviews');}
-     if (courseNum == 'COMP 379'){
-     formReview = db.child('379_reviews');}
-     if (courseNum == 'COMP 380'){
-     formReview = db.child('380_reviews');}
-     if (courseNum == 'COMP 381'){
-     formReview = db.child('381_reviews');}
-     if (courseNum == 'COMP 382'){
-     formReview = db.child('382_reviews');}
-     if (courseNum == 'COMP 383'){
-     formReview = db.child('383_reviews');}
-     if (courseNum == 'COMP 386'){
-     formReview = db.child('386_reviews');}
-     if (courseNum == 'COMP 388'){
-     formReview = db.child('388_reviews');}
-     if (courseNum == 'COMP 390'){
-     formReview = db.child('390_reviews');}
-     if (courseNum == 'COMP 391'){
-     formReview = db.child('391_reviews');}
-     if (courseNum == 'COMP 392'){
-     formReview = db.child('392_reviews');}
-     if (courseNum == 'COMP 395'){
-     formReview = db.child('395_reviews');}
-     if (courseNum == 'COMP 397'){
-     formReview = db.child('397_reviews');}
-     if (courseNum == 'COMP 398'){
-     formReview = db.child('398_reviews');}
-     if (courseNum == 'COMP 399'){
-     formReview = db.child('399_reviews');}
-
-
-
+   if (courseNum == 'COMP 330'){
+   formReview = db.child('330_reviews');}
+   if (courseNum == 'COMP 331'){
+   formReview = db.child('331_reviews');}
+   if (courseNum == 'COMP 332'){
+   formReview = db.child('332_reviews');}
+   if (courseNum == 'COMP 333'){
+   formReview = db.child('333_reviews');}
+   if (courseNum == 'COMP 335'){
+   formReview = db.child('335_reviews');}
+   if (courseNum == 'COMP 336'){
+   formReview = db.child('336_reviews');}
+   if (courseNum == 'COMP 337'){
+   formReview = db.child('337_reviews');}
+   if (courseNum == 'COMP 338'){
+   formReview = db.child('338_reviews');}
+   if (courseNum == 'COMP 339'){
+   formReview = db.child('339_reviews');}
+   if (courseNum == 'COMP 340'){
+   formReview = db.child('340_reviews');}
+   if (courseNum == 'COMP 341'){
+   formReview = db.child('341_reviews');}
+   if (courseNum == 'COMP 342'){
+   formReview = db.child('342_reviews');}
+   if (courseNum == 'COMP 343'){
+   formReview = db.child('343_reviews');}
+   if (courseNum == 'COMP 345'){
+   formReview = db.child('345_reviews');}
+   if (courseNum == 'COMP 346'){
+   formReview = db.child('346_reviews');}
+   if (courseNum == 'COMP 347'){
+   formReview = db.child('347_reviews');}
+   if (courseNum == 'COMP 348'){
+   formReview = db.child('348_reviews');}
+   if (courseNum == 'COMP 349'){
+   formReview = db.child('349_reviews');}
+   if (courseNum == 'COMP 351'){
+   formReview = db.child('351_reviews');}
+   if (courseNum == 'COMP 352'){
+   formReview = db.child('352_reviews');}
+   if (courseNum == 'COMP 353'){
+   formReview = db.child('353_reviews');}
+   if (courseNum == 'COMP 356'){
+   formReview = db.child('356_reviews');}
+   if (courseNum == 'COMP 362'){
+   formReview = db.child('362_reviews');}
+   if (courseNum == 'COMP 363'){
+   formReview = db.child('363_reviews');}
+   if (courseNum == 'COMP 364'){
+   formReview = db.child('364_reviews');}
+   if (courseNum == 'COMP 366'){
+   formReview = db.child('366_reviews');}
+   if (courseNum == 'COMP 367'){
+   formReview = db.child('367_reviews');}
+   if (courseNum == 'COMP 369'){
+   formReview = db.child('369_reviews');}
+   if (courseNum == 'COMP 370'){
+   formReview = db.child('370_reviews');}
+   if (courseNum == 'COMP 371'){
+   formReview = db.child('371_reviews');}
+   if (courseNum == 'COMP 373'){
+   formReview = db.child('373_reviews');}
+   if (courseNum == 'COMP 376'){
+   formReview = db.child('376_reviews');}
+   if (courseNum == 'COMP 377'){
+   formReview = db.child('377_reviews');}
+   if (courseNum == 'COMP 378'){
+   formReview = db.child('378_reviews');}
+   if (courseNum == 'COMP 379'){
+   formReview = db.child('379_reviews');}
+   if (courseNum == 'COMP 380'){
+   formReview = db.child('380_reviews');}
+   if (courseNum == 'COMP 381'){
+   formReview = db.child('381_reviews');}
+   if (courseNum == 'COMP 382'){
+   formReview = db.child('382_reviews');}
+   if (courseNum == 'COMP 383'){
+   formReview = db.child('383_reviews');}
+   if (courseNum == 'COMP 386'){
+   formReview = db.child('386_reviews');}
+   if (courseNum == 'COMP 388'){
+   formReview = db.child('388_reviews');}
+   if (courseNum == 'COMP 390'){
+   formReview = db.child('390_reviews');}
+   if (courseNum == 'COMP 391'){
+   formReview = db.child('391_reviews');}
+   if (courseNum == 'COMP 392'){
+   formReview = db.child('392_reviews');}
+   if (courseNum == 'COMP 395'){
+   formReview = db.child('395_reviews');}
+   if (courseNum == 'COMP 397'){
+   formReview = db.child('397_reviews');}
+   if (courseNum == 'COMP 398'){
+   formReview = db.child('398_reviews');}
+   if (courseNum == 'COMP 399'){
+   formReview = db.child('399_reviews');}
 
   }
 
   else {
     console.log('wrong course!');
   }
-
 }
 
 check('COMP 266');
