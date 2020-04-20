@@ -58,8 +58,34 @@ function check(courseNum){
     formReview = db.child('323_reviews');}
     if (courseNum == 'COMP 325'){
     formReview = db.child('325_reviews');}
-
-
+    if(title == 'COMP 104'){
+    formReview = db.child('104_reviews');}
+    if (title == 'COMP 120'){
+    formReview = db.child('120_reviews');}
+    if (title == 'COMP 122'){
+    formReview = db.child('122_reviews');}
+    if (title == 'COMP 125'){
+    formReview = db.child('125_reviews');}
+    if (title == 'COMP 150'){
+    formReview = db.child('150_reviews');}
+    if (title == 'COMP 163'){
+    formReview = db.child('163_reviews');}
+    if (title == 'COMP 170'){
+    formReview = db.child('170_reviews');}
+    if (title == 'COMP 171'){
+    formReview = db.child('171_reviews');}
+    if (title == 'COMP 180'){
+    formReview = db.child('180_reviews');}
+    if (title == 'COMP 215'){
+    formReview = db.child('215_reviews');}
+    if (title == 'COMP 231'){
+    formReview = db.child('231_reviews');}
+    if (title == 'COMP 250'){
+    formReview = db.child('250_reviews');}
+    if (title == 'COMP 251'){
+    formReview = db.child('251_reviews');}
+    if (title == 'COMP 264'){
+    formReview = db.child('264_reviews');}
 
 
   }
@@ -69,7 +95,6 @@ function check(courseNum){
   }
 
 }
-
 check('COMP 324');
 check('COMP 328');
 check('COMP 347');
@@ -89,6 +114,22 @@ check('COMP 314');
 check('COMP 319');
 check('COMP 323');
 check('COMP 325');
+check('COMP 104');
+check('COMP 120');
+check('COMP 122');
+check('COMP 125');
+check('COMP 150');
+check('COMP 163');
+check('COMP 170');
+check('COMP 171');
+check('COMP 180');
+check('COMP 215');
+check('COMP 231');
+check('COMP 250');
+check('COMP 251');
+check('COMP 264');
+
+
 //const formReview = firebase.database().ref().child('324_reviews'); // creates and names collection of reviews of particular class
 
 document.getElementById('reviewForm').addEventListener('submit', formSubmit);
